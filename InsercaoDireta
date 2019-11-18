@@ -1,0 +1,22 @@
+/*IMPORTANTE: LEMBRE DE COMEÇAR TODOS OS J EM 1, PARA QUE A SELEÇÃO FUNCIONE. TODOS OS OUTROS MÉTODOS DEVERÃO
+  CONSIDERAR QUE O VETOR COMEÇA EM 1 E TERMINA EM 16600 (o elemento em 0 ficará com lixo ou qualquer coisa)*/
+  
+  
+  void insercaoDireta(Operacao op[], int N){
+    int i,j, xM;
+    char x[10];
+    for ( i = 2; i < (N+1); i++){
+        strcpy(x, op[i].cod);
+        xM = op[i].mes;
+        strcpy(op[0].cod, x);
+        op[0].mes = xM;
+        j = i;
+        while (strcmp(x, op[j-1].cod) < 0){
+           strcpy(op[j].cod, op[j-1].cod);
+           op[j].mes = op[j-1].mes;
+            j =  j - 1 ;
+    }
+    strcpy(op[j].cod, x);
+    op[j].mes = xM;
+    }
+}
