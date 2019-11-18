@@ -2,7 +2,7 @@
   CONSIDERAR QUE O VETOR COMEÇA EM 1 E TERMINA EM 16600 (o elemento em 0 ficará com lixo ou qualquer coisa)*/
   
   
-  void insercaoDireta(Operacao op[], int N){
+  void DInsertion(Operacao op[], int N){
     int i,j, xM;
     char x[10];
     for ( i = 2; i < (N+1); i++){
