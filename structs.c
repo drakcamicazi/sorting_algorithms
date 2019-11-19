@@ -118,9 +118,7 @@ int main(){
     fprintf(saida, "%s;%i\n", o[i].cod, o[i].mes);
     i++;
   }
-
 	fclose(saida);
-
 }
 
 void merge(Operacao a[], int L, int h, int R, Operacao c[]){
