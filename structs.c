@@ -11,7 +11,7 @@ void verificarAbertura(FILE *f){
 }
 
 typedef struct{
-    char cod[10];
+    char cod[11];
     int mes;
 } Operacao;
 
