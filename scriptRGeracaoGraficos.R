@@ -21,4 +21,13 @@ plot(HeapSort[,c(4,2)], type = "line", main = "HeapSort", xlab = "Número de Có
      ylab = "Número de comparações", xlim = c(0,10000), ylim = c(500,180000))
 plot(QuickSort[,c(4,2)], type = "line", main = "QuickSort", xlab = "Número de Códigos", 
      ylab = "Número de comparações", xlim = c(0,10000), ylim = c(400,100000))
+
+plot(Insercao[,c(4,3)], type = "line", main = "Inserção Direta", xlab = "Número de Códigos", 
+     ylab = "Número de movimentações", xlim = c(0,10000), ylim = c(2600,25000000))
+plot(Selecao[,c(4,3)], type = "line", main = "Seleção", xlab = "Número de Códigos", 
+     ylab = "Número de movimentações", xlim = c(0,10000), ylim = c(250,30000))
+plot(HeapSort[,c(4,3)], type = "line", main = "HeapSort", xlab = "Número de Códigos", 
+     ylab = "Número de movimentações", xlim = c(0,10000), ylim = c(1000,180000))
+plot(QuickSort[,c(4,3)], type = "line", main = "QuickSort", xlab = "Número de Códigos", 
+     ylab = "Número de movimentações", xlim = c(0,10000), ylim = c(500,120000))
       
